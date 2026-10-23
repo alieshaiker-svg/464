@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Montreal Playgrounds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Leaflet: the map library. Loaded from the internet, nothing to install. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Montréal Playgrounds</h1>
+    <p>For parents with young children in Montréal, this map makes it easy to explore playground locations by borough.</p>
+    <p>Compare playgrounds by the tree-canopy coverage surrounding each location.</p>
+    <p>Select a borough from the dropdown to see the playgrounds located there.</p>
+    <p id="status">Loading playgrounds...</p>
+    <label for="borough-filter">Borough:</label>
+    <select id="borough-filter" disabled>
+      <option value="">All boroughs</option>
+    </select>
+    <p class="source">Source: Ville de Montréal — Installations récréatives, sportives et culturelles extérieures, CC BY 4.0.</p>
+  </header>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
